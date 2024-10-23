@@ -5,7 +5,7 @@ resources:
 
 images:
   - name: nitinv1/app-env
-    newTag: prod
+    newTag: prod1
 
 patchesStrategicMerge:
   - service-patch.yaml
