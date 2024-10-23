@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: app-service
 spec:
+  type: NodePort
   selector:
     app: app
   ports:
-    - protocol: TCP
-      port: 8080              # External port (for Dev)
-      targetPort: 5000         # Internal container port (your app)
-  type: LoadBalancer
+    - port: 80
+      targetPort: 5000
+      nodePort: 30007
+
