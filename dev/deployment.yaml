@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tut-demo
+  annotations:
+    link.argocd.argoproj.io/external-link: http://78.47.144.24:30829/
 spec:
   selector:
     matchLabels:
