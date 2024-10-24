@@ -12,8 +12,8 @@ patchesStrategicMerge:
 patches:
   - target:
       kind: Deployment
-    patch: |
+    patch: |-
       - op: add
-        path: /metadata/annotations/-
+        path: /metadata/annotations
         value:
           link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
