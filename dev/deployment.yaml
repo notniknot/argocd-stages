@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tut-demo
-        image: docker.io/whalesay
+        image: docker.io/docker/whalesay
         ports:
         - containerPort: 8080
 
