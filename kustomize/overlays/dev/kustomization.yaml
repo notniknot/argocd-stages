@@ -8,3 +8,12 @@ images:
 
 patchesStrategicMerge:
   - service-patch.yaml
+
+patches:
+  - target:
+      kind: Deployment
+    patch: |
+      - op: add
+         path: /spec/template/metadata/annotations/-
+         value:
+           link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
