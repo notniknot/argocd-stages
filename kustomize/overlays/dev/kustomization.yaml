@@ -14,6 +14,6 @@ patches:
       kind: Deployment
     patch: |
       - op: add
-         path: /spec/template/metadata/annotations/-
+         path: /metadata/annotations/-
          value:
            link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
